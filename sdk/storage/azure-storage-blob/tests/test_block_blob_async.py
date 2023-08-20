@@ -1221,7 +1221,7 @@ class TestStorageBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_frm_bytes_with_index_cnt_props(self, **kwargs):
+    async def test_create_from_bytes_with_index_count_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1435,7 +1435,7 @@ class TestStorageBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_frm_stream_nonseek_chunk_upload_known_size(self, **kwargs):
+    async def test_create_from_stream_nonseek_chunked_upload_known_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1459,7 +1459,7 @@ class TestStorageBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_blob_frm_strm_nonseek_chunk_upload_unkown_size(self, **kwargs):
+    async def test_blob_from_stream_nonseek_chunked_upload_unknown_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1513,7 +1513,7 @@ class TestStorageBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_blob_from_stream_chunked_upload_with_count(self, **kwargs):
+    async def test_create_blob_from_stream_chunked_upload_with_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1536,7 +1536,7 @@ class TestStorageBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_frm_stream_chu_upld_with_countandprops(self, **kwargs):
+    async def test_create_from_stream_chunked_upload_with_count_and_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

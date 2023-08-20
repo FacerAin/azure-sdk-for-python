@@ -76,7 +76,7 @@ class TestBlobStorageAccountAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_set_std_blob_tier_w_rehydrate_priority(self, **kwargs):
+    async def test_set_standard_blob_tier_with_rehydrate_priority(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

@@ -282,7 +282,7 @@ class TestStorageLargeBlockBlob(StorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    def test_creat_lrgblob_frm_stream_w_progress_chnkd_upload(self, **kwargs):
+    def test_create_large_blob_from_stream_with_progress_chunked_upload(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -331,7 +331,7 @@ class TestStorageLargeBlockBlob(StorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    def test_creat_lrgblob_frm_strm_chnkd_uplod_w_count_n_props(self, **kwargs):
+    def test_create_large_blob_from_stream_chunked_upload_with_count_and_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -358,7 +358,7 @@ class TestStorageLargeBlockBlob(StorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    def test_creat_lrg_blob_frm_stream_chnked_upload_w_props(self, **kwargs):
+    def test_create_large_blob_from_stream_chunked_upload_with_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

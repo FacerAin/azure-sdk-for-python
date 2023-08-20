@@ -276,7 +276,7 @@ class TestStorageLargeBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    async def test_creat_lrg_blob_frm_stream_chnkd_upload(self, **kwargs):
+    async def test_create_large_blob_from_stream_chunked_upload(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -297,7 +297,7 @@ class TestStorageLargeBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    async def test_creat_lrgblob_frm_strm_w_prgrss_chnkduplod(self, **kwargs):
+    async def test_create_large_blob_from_stream_with_progress_chunked_upload(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -326,7 +326,7 @@ class TestStorageLargeBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    async def test_creat_lrgblob_frm_strm_chnkd_uplod_w_cnt(self, **kwargs):
+    async def test_create_large_blob_from_stream_chunked_upload_with_content(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -348,7 +348,7 @@ class TestStorageLargeBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    async def test_creat_lrg_frm_stream_chnk_upload_w_cntnprops(self, **kwargs):
+    async def test_create_large_blob_from_stream_chunked_upload_with_count_and_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -376,7 +376,7 @@ class TestStorageLargeBlockBlobAsync(AsyncStorageRecordedTestCase):
 
     @pytest.mark.live_test_only
     @BlobPreparer()
-    async def test_create_large_from_stream_chunk_upld_with_props(self, **kwargs):
+    async def test_create_large_from_stream_chunked_upload_with_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

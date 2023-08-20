@@ -2595,7 +2595,7 @@ class TestStorageBlobAccessConditionsAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_get_page_ranges_iter_with_if_unmod_fail(self, **kwargs):
+    async def test_get_page_ranges_iter_with_if_unmodified_fail(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
         variables = kwargs.pop("variables", {})
@@ -2891,7 +2891,7 @@ class TestStorageBlobAccessConditionsAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_apnd_blob_from_bytes_with_if_mod_fail(self, **kwargs):
+    async def test_append_blob_from_bytes_with_if_modified_fail(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
         variables = kwargs.pop("variables", {})
@@ -2937,7 +2937,7 @@ class TestStorageBlobAccessConditionsAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_append_blob_from_bytes_with_if_unmod_fail(self, **kwargs):
+    async def test_append_blob_from_bytes_with_if_unmodified_fail(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
         variables = kwargs.pop("variables", {})
@@ -3020,7 +3020,7 @@ class TestStorageBlobAccessConditionsAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_apnd_blob_from_bytes_if_none_match_fail(self, **kwargs):
+    async def test_append_blob_from_bytes_if_none_match_fail(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

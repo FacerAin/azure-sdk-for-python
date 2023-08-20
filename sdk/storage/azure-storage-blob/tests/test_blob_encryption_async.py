@@ -528,7 +528,7 @@ class TestStorageBlobEncryptionAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_get_blob_range_expnded_to_begin_bloc_align(self, **kwargs):
+    async def test_get_blob_range_expanded_to_begin_bloc_align(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

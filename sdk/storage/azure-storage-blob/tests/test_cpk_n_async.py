@@ -919,7 +919,7 @@ class TestStorageCPKAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_copy_blob_from_url_with_ecryption_scope(self, **kwargs):
+    async def test_copy_blob_from_url_with_encryption_scope(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1052,7 +1052,7 @@ class TestStorageCPKAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_container_with_default_cpk_n_deny_override(self, **kwargs):
+    async def test_create_container_with_default_cpk_and_deny_override(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

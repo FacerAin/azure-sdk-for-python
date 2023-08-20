@@ -321,7 +321,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
         assert service.account_name == storage_account_name
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_endpoint_protocol(self, **kwargs):
+    def test_create_service_with_connection_string_endpoint_protocol(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -375,7 +375,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
             service.secondary_endpoint
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_custm_domain(self, **kwargs):
+    def test_create_service_with_connection_string_custom_domain(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -396,7 +396,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
             assert service.secondary_endpoint.startswith('https://' + storage_account_name + '-secondary.blob.core.windows.net')
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_custm_dom_trailing_slash(self, **kwargs):
+    def test_create_service_with_connection_string_custom_domain_trailing_slash(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -417,7 +417,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
             assert service.secondary_endpoint.startswith('https://' + storage_account_name + '-secondary.blob.core.windows.net')
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_custm_dom_2ndry_override(self, **kwargs):
+    def test_create_service_with_connection_string_domain_2ndry_override(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -439,7 +439,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
             assert service.secondary_endpoint.startswith('https://www-sec.mydomain.com/')
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_fail_if_2ndry_wo_primary(self, **kwargs):
+    def test_create_service_with_connection_string_fail_if_2ndry_wo_primary(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -456,7 +456,7 @@ class TestStorageClientAsync(AsyncStorageRecordedTestCase):
                 service = service_type[0].from_connection_string(conn_string, container_name="foo", blob_name="bar")
 
     @BlobPreparer()
-    def test_creat_serv_w_connstr_pass_if_2ndry_w_primary(self, **kwargs):
+    def test_create_service_with_connection_string_pass_if_2ndry_with_primary(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

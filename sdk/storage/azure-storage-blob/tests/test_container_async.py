@@ -85,7 +85,7 @@ class TestStorageContainerAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_create_cntnr_w_existing_cntnr_fail_on_exist(self, **kwargs):
+    async def test_create_container_with_existing_container_fail_on_exist(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1052,7 +1052,7 @@ class TestStorageContainerAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_delete_cntnr_w_nonexisting_cntnr_fail_not_exist(self, **kwargs):
+    async def test_delete_container_with_nonexisting_container_fail_not_exist(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

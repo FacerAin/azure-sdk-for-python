@@ -1208,7 +1208,7 @@ class TestStorageAppendBlob(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_app_blob_from_stream_nonseekable_chnked_upload_known_size(self, **kwargs):
+    def test_app_blob_from_stream_nonseekable_chunked_upload_known_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1230,7 +1230,7 @@ class TestStorageAppendBlob(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_app_blob_from_stream_nonseekable_chnked_upload_unk_size(self, **kwargs):
+    def test_app_blob_from_stream_nonseekable_chunked_upload_unknown_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

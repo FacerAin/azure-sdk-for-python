@@ -925,7 +925,7 @@ class TestStorageCPKN(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_copy_blob_from_url_with_ecryption_scope(self, **kwargs):
+    def test_copy_blob_from_url_with_encryption_scope(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1053,7 +1053,7 @@ class TestStorageCPKN(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_create_container_with_default_cpk_n_deny_override(self, **kwargs):
+    def test_create_container_with_default_cpk_and_deny_override(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 

@@ -1358,7 +1358,7 @@ class TestStorageBlockBlob(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_create_from_stream_nonseek_chunk_upld_unkwn_size(self, **kwargs):
+    def test_create_from_stream_nonseek_chunk_upload_unknown_size(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
@@ -1428,7 +1428,7 @@ class TestStorageBlockBlob(StorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy
-    def test_create_from_stream_chunk_upload_with_cntandrops(self, **kwargs):
+    def test_create_from_stream_chunk_upload_with_count_and_props(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
