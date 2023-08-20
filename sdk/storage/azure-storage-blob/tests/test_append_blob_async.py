@@ -1100,7 +1100,7 @@ class TestStorageAppendBlobAsync(AsyncStorageRecordedTestCase):
 
     @BlobPreparer()
     @recorded_by_proxy_async
-    async def test_appblob_from_bytes_chunked_upload_with_idx_and_count(self, **kwargs):
+    async def test_app_blob_from_bytes_chunked_upload_with_idx_and_count(self, **kwargs):
         storage_account_name = kwargs.pop("storage_account_name")
         storage_account_key = kwargs.pop("storage_account_key")
 
